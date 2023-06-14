@@ -15,9 +15,9 @@ export class AddRemoveElemnetPage {
         this.btn_Delete = page.locator('//button[text()="Delete"]');
     }
 
-    async VerifyAddRemoveElementFunction(addRemoveElementsHeader: string) {
+    async VerifyAddRemoveElementFunction() {
         //Verfiy the Page Header
-        await expect(this.lbl_AddRemoveElementsHeader).toHaveText(addRemoveElementsHeader);
+        await expect(this.lbl_AddRemoveElementsHeader).toHaveText("Add/Remove Elements");
         //Click on the Add Element Button (Add a Element)
         await this.btn_AddElement.click();
         //Verify Delete Button Appears

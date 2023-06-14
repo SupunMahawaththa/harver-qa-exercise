@@ -1,4 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
+require('dotenv').config();
 
 export class ExampleElementPage {
     readonly page: Page;
@@ -19,11 +20,11 @@ export class ExampleElementPage {
         this.lnk_FormAuthentication = page.locator('//li/a[text()="Form Authentication"]');
     }
 
-    async NavigateToURL(pageHeaderWelcome:string) {
+    async NavigateToURL() {
         //Navigate to the URL
-        await this.page.goto('https://the-internet.herokuapp.com/');
+        await this.page.goto(process.env.APPLICATION_URL!);
         //Verfiy the Page Header
-        await expect(this.lbl_PageHeaderWelcome).toHaveText(pageHeaderWelcome);
+        await expect(this.lbl_PageHeaderWelcome).toHaveText("Welcome to the-internet");
 
       }
       async ClickOnAddRemoveLink() {

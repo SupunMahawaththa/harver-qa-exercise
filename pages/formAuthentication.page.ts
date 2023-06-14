@@ -19,18 +19,18 @@ export class FormAuthenticationPage {
         this.lbl_SuccessMessages = page.locator('//div[@id="flash-messages"]/div');
     }
 
-    async VerifyFormAuthenticationFunction(username:string, password: string, successMessage : string) {
+    async VerifyFormAuthenticationFunction() {
         //Verfiy the Login Page Header
         await expect(this.lbl_LoginPageHeader).toHaveText("Login Page");
         //Type Username
-        await this.txt_Username.fill(username);
+        await this.txt_Username.fill(process.env.FORM_AUTH_USERNAME!);
         //Type Username
-        await this.txt_Password.fill(password);
+        await this.txt_Password.fill(process.env.FORM_AUTH_PASSWORD!);
         //Click on the Login Button
         await this.btn_Login.click();
         //Verify User Login is Successful
         //await expect(this.lbl_SuccessMessages).toBeVisible();
-        await expect(this.lbl_SuccessMessages).toContainText(successMessage);
+        await expect(this.lbl_SuccessMessages).toContainText("You logged into a secure area!");
 
     }
 

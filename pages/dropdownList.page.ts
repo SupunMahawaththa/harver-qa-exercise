@@ -12,11 +12,11 @@ export class DropdownListPage {
         this.ele_SelectedDropdownValue = page.locator('//h3[text()="Dropdown List"]/following-sibling::select');
 
     }
-    async VerifyDropdownListFunction(pageHeaderDropdownList:string, dropdownValue:string) {
+    async VerifyDropdownListFunction() {
         //Verify Page Header
-        await expect(this.lbl_PageHeaderDropdownList).toHaveText(pageHeaderDropdownList);
+        await expect(this.lbl_PageHeaderDropdownList).toHaveText("Dropdown List");
         //Select a Value from the Dropdown list 
-        await this.dd_DropdownList.selectOption(dropdownValue);
+        await this.dd_DropdownList.selectOption("Option 2");
         //Verify Previously Selected Value is Selected
         await expect(this.ele_SelectedDropdownValue).toBeVisible();
 

@@ -6,11 +6,11 @@ test('Verify Dropdown List Function', async ({ page }) => {
     const exampleElement = new ExampleElementPage(page);
     const dropdownList = new DropdownListPage(page);
     //Navigate to the URL
-    await exampleElement.NavigateToURL("Welcome to the-internet");
+    await exampleElement.NavigateToURL();
     //Click on Dropdown List Link
     await exampleElement.ClickOnDropdownListLink();
     //Verify Dropdown List Function
-    await dropdownList.VerifyDropdownListFunction("Dropdown List", "Option 2");
+    await dropdownList.VerifyDropdownListFunction();
     //Added for the Debug Purpose
     //await page.pause();
 });
