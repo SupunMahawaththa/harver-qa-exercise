@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { ExampleElementPage } from '../pages/pg_ExampleElement';
-import { DropdownListPage } from '../pages/pg_DropdownList';
+import { ExampleElementPage } from '../pages/exampleElement.page';
+import { DropdownListPage } from '../pages/dropdownList.page';
 
 test('Verify Dropdown List Function', async ({ page }) => {
     const exampleElement = new ExampleElementPage(page);

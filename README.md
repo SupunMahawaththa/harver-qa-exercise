@@ -11,11 +11,19 @@ The following naming conventions are utilized for test cases and pages.
 - tc_ - uses for test case
 - pg_ - uses for page
 
+### Prequisites
+
+You'll need **Node.JS** 15 or higher and **NPM** installed to setup and run the server.
+
+:warning: This application does not support Node.js 14 or below!
+
+:Info: If You want, You can use **YARN** instead of **NPM**. To install **YARN** `npm install --global yarn`
+
 ### Steps to execute
 
 First time execute the following command:
 
-`npm install`
+`npm install`or `yarn install`
 
 To execute the unit test cases, you may utilize the following commands, which will execute the tests using three browser engines.
 

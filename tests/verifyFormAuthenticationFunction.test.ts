@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { ExampleElementPage } from '../pages/pg_ExampleElement';
-import { FormAuthenticationPage } from '../pages/pg_FormAuthentication';
+import { ExampleElementPage } from '../pages/exampleElement.page';
+import { FormAuthenticationPage } from '../pages/formAuthentication.page';
 
 test('Verify Form Authentication Function', async ({ page }) => {
     const exampleElement = new ExampleElementPage(page);
