@@ -13,7 +13,7 @@ You'll need **Node.JS** 14 or higher and **NPM** installed to setup and run the 
 
 :warning: This application does not support Node.js below version 14 .. !
 
-:info: If You want, You can use **YARN** instead of **NPM**. To install **YARN** you can use `npm install --global yarn` command.
+:information_source: If You want, You can use **YARN** instead of **NPM**. To install **YARN** you can use `npm install --global yarn` command.
 
 ### Steps to execute
 
