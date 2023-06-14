@@ -7,7 +7,7 @@
 
 This automation project is designed based on the Playwright Page Object Model. The web elements and corresponding methods are organized within the "pages" folder, while the test cases are located in the "tests" project folder.
 
-### Prequisites
+### Prerequisite
 
 You'll need **Node.JS** 14 or higher and **NPM** installed to setup and run the server.
 
@@ -19,7 +19,7 @@ You'll need **Node.JS** 14 or higher and **NPM** installed to setup and run the 
 
 First time execute the following command:
 
-`npm install`or `yarn install`
+`npm install` or `yarn install`
 
 To perform bulk execution using three browser engines in headless mode, you can use the following command.
 
