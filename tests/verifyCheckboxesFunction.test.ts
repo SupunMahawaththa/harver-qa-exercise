@@ -11,6 +11,4 @@ test('Verify Checkboxes Function', async ({ page }) => {
     await exampleElement.ClickOnCheckboxesLink();
     //Verify Checkboxes Function
     await checkboxes.VerifyCheckboxFunction();
-    //Added for the Debug Purpose
-    //await page.pause();
 });

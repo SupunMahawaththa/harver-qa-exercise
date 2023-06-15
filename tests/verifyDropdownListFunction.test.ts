@@ -11,6 +11,4 @@ test('Verify Dropdown List Function', async ({ page }) => {
     await exampleElement.ClickOnDropdownListLink();
     //Verify Dropdown List Function
     await dropdownList.VerifyDropdownListFunction();
-    //Added for the Debug Purpose
-    //await page.pause();
 });

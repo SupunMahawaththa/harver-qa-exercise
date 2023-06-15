@@ -29,7 +29,6 @@ export class FormAuthenticationPage {
         //Click on the Login Button
         await this.btn_Login.click();
         //Verify User Login is Successful
-        //await expect(this.lbl_SuccessMessages).toBeVisible();
         await expect(this.lbl_SuccessMessages).toContainText("You logged into a secure area!");
 
     }
