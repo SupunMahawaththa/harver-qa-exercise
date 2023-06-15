@@ -23,7 +23,7 @@ export class ExampleElementPage {
     async NavigateToURL() {
         //Navigate to the URL
         await this.page.goto(process.env.APPLICATION_URL!);
-        //Verfiy the Page Header
+        //Verify the Page Header
         await expect(this.lbl_PageHeaderWelcome).toHaveText("Welcome to the-internet");
 
       }

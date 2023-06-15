@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
-export class AddRemoveElemnetPage {
+export class AddRemoveElementPage {
     readonly page: Page;
     readonly lbl_AddRemoveElementsHeader: Locator;
     readonly btn_AddElement: Locator;
@@ -16,7 +16,7 @@ export class AddRemoveElemnetPage {
     }
 
     async VerifyAddRemoveElementFunction() {
-        //Verfiy the Page Header
+        //Verify the Page Header
         await expect(this.lbl_AddRemoveElementsHeader).toHaveText("Add/Remove Elements");
         //Click on the Add Element Button (Add a Element)
         await this.btn_AddElement.click();

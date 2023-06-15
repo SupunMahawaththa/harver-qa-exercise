@@ -1,14 +1,14 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { ExampleElementPage } from '../pages/exampleElement.page';
-import { AddRemoveElemnetPage } from '../pages/addRemoveElement.page';
+import { AddRemoveElementPage } from '../pages/addRemoveElement.page';
 
 test('Verify Add/Remove Elements Function', async ({ page }) => {
     const exampleElement = new ExampleElementPage(page);
-    const addRemoveElemnet = new AddRemoveElemnetPage(page);
+    const addRemoveElement = new AddRemoveElementPage(page);
     //Navigate to the URL
     await exampleElement.NavigateToURL();
-    //Click on Add/Remove Elemnts Link
+    //Click on Add/Remove Element Link
     await exampleElement.ClickOnAddRemoveLink();
     //Verify Add/Remove Element Function
-    await addRemoveElemnet.VerifyAddRemoveElementFunction();
+    await addRemoveElement.VerifyAddRemoveElementFunction();
   });

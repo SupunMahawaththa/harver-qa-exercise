@@ -20,7 +20,7 @@ export class FormAuthenticationPage {
     }
 
     async VerifyFormAuthenticationFunction() {
-        //Verfiy the Login Page Header
+        //Verify the Login Page Header
         await expect(this.lbl_LoginPageHeader).toHaveText("Login Page");
         //Type Username
         await this.txt_Username.fill(process.env.FORM_AUTH_USERNAME!);
